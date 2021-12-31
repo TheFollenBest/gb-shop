@@ -10,6 +10,7 @@
     --light-red: #FF6A6A;
     --dark-grey: #5D5D5D;
     --grey-input: #E1E1E1;
+    --subscribe-dark: #E05C6E;
 }
 
 * {
@@ -256,6 +257,44 @@ body {
     background-color: var(--light-grey);
     max-width: 360px;
     margin: 30px 0 0;
+    position: relative;
+}
+
+.product-item__overlay{
+    min-width: 360px;
+    min-height: 420px;
+    background-color: var(--dark-grey);
+    opacity: 86%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.product-item-overlay__btn{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 138px;
+    height: 43px;
+    transform: translate(-38%, -48%);
+    background: url(../img/card-cart.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 1px solid var(--white);
+    padding: 14px 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: end;
+    color: var(--white);
+    display: block;
+}
+
+.product__item:hover .product-item__overlay{
+    display: block;
+}
+
+.product-item-overlay__btn:hover{
+    opacity: 75%;
 }
 
 .product-item {}
@@ -426,6 +465,11 @@ body {
     border: transparent;
     text-transform: capitalize;
     padding: 16px 20px 16px;
+    transition: 0.3s;
+}
+
+.subscribe-form__btn:hover{
+    background-color: var(--subscribe-dark);
 }
 
 .footer__social {
@@ -455,4 +499,8 @@ body {
 }
 
 .footer-social__link {}
+
+.footer-social__link:hover{
+    background-color: var(--pink); /* Доделать! */
+}
 /* FOOTER END */
