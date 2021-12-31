@@ -498,9 +498,14 @@ body {
     flex-grow: 1;
 }
 
-.footer-social__link {}
-
-.footer-social__link:hover{
-    background-color: var(--pink); /* Доделать! */
+.footer-social__item {
+    background-color: var(--white);
+    transition: 0.3s;
 }
+
+.footer-social__item:hover{
+    background-color: var(--pink);
+}
+
+.footer-social__link{}
 /* FOOTER END */
