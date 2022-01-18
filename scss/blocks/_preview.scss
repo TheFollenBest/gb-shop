@@ -1,0 +1,63 @@
+.preview {
+    background-color: var(--pink-bkg);
+
+    &__wrp {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 46%;
+        @media (max-width: 560px) {
+            display: none;
+        }
+    }
+
+    &__title-wrp {
+        width: 100%;
+        @include flex-justify(center);
+
+        @media (max-width: 560px) {
+            padding: 148px 0;
+        }
+
+        @include mobile{
+            padding: 148px 0;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+    
+        padding-left: 16px;
+        border-left: var(--pink) 12px solid;
+
+        @include tablet{
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        display: block;
+
+        @include tablet{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    &__subtitle-pink {
+        color: var(--pink);
+    }
+}
