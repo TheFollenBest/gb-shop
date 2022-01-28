@@ -1,0 +1,31 @@
+.nav-item {
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--pink);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s;
+    }
+
+    &__sub-list {
+        margin: 12px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__sub-link {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--grey);
+        padding: 0  20px 0;
+        transition: 0.4s;
+
+        &:hover{
+            color: var(--dark-black);
+        }
+    }
+}
